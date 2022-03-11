@@ -12,6 +12,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
 
+    //Item erstellen
     public static final RegistryObject<Item> CIRINE = ITEMS.register("citrine", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static final RegistryObject<Item> RAW_CIRINE = ITEMS.register("raw_citrine", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));

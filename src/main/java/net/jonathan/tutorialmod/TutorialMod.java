@@ -1,6 +1,7 @@
 package net.jonathan.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.jonathan.tutorialmod.block.ModBlocks;
 import net.jonathan.tutorialmod.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -35,6 +36,8 @@ public class TutorialMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
+
 
         eventBus.addListener(this::setup);
 
